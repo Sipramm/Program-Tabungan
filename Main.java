@@ -2,7 +2,9 @@ public class Main {
     public static void main(String[] args) {
         int tmp;
         boolean status;
-        User penabung = new User("Dzaki","Pramudya");
+        User penabung = new User();
+        penabung.setNamaAwal("Dzaki");
+        penabung.setNamaAkhir("Pramudya");
         System.out.println("Nama Pemilik Tabungan "+ penabung.getNamaAwal()+penabung.getNamaAkhir());
         penabung.setTabungan(new Tabungan (100000));
         tmp = penabung.getTabungan().getSaldo();
